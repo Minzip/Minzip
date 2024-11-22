@@ -1,0 +1,205 @@
+@import url('https://fonts.cdnfonts.com/css/bodoniflf');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.cdnfonts.com/css/dream-orphans');
+
+
+body{font-family: 'Pretendard';  font-weight: normal;}
+.wrap {overflow: hidden; background: #fff; color: #333;}
+.en2{font-family: 'BodoniFLF', sans-serif;}
+.en3{font-family: 'Dream Orphans', sans-serif;}
+.inner {position: relative; margin: 0 auto; width: 80%;}
+.textBox h2 {font-size: 72px; font-weight: bold; color: #B1C68E; letter-spacing: -1px;}
+.textBox p {font-size: 18px; color: #000; font-weight: 200;}
+
+header {width: 100%; display: flex; justify-content: space-between; position:fixed; padding: 40px 60px; box-sizing: border-box; z-index: 1000;}
+header .logo {width: 80px;}
+header .logo a svg{margin-top: 10px;}
+header .logo a .logo {fill: none;stroke: #555;stroke-width: 4px;}
+header .logo p {width: 8%; position: absolute;left: 100px; top: 50%; transform: translatey(-50%); font-size: 16px; font-weight: normal; line-height: 1.1; color: #333; letter-spacing: -1px;}
+
+header .gnb{color: #333; font-size: 16px; font-weight: normal; letter-spacing: -1px;}
+header .gnb li {margin-bottom: 7px;}
+header .gnb li span {color: #B9DC5F;}
+
+header .gnb li .contact.active {color: #B9DC5F;}
+header .gnb li span.active {color: #fff;}
+
+
+/* visual */
+.visual {}
+.visual .inner {margin-top: 200px;}
+.visual .inner .main {text-align: center;}
+.visual .inner .main  h1 {font-size: 150px; position: absolute; top: 30%; left: 50%; transform: translateX(-50%); width: 100%;}
+.visual .inner .main .img {animation-name: spin; animation-duration: 12s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes spin {
+    100% {transform:rotate(360deg);}
+}
+
+.visual .inner > .bottom {display: flex; justify-content: space-between; width: 100%; margin:0 auto; margin-top: 200px; margin-bottom: 80px;}
+.visual .inner .bottom .left {width: 40%; margin-left:200px;}
+.visual .inner .bottom .left h3 {font-size: 30px; letter-spacing: -1px; font-weight: 400; line-height: 1.4; margin-bottom: 10px;}
+.visual .inner .bottom .left h3 span {color: #B9DC5F;}
+.visual .inner .bottom .left p {font-size: 18px; letter-spacing: -1px; line-height: 1.4; font-weight: 200; color: #888;}
+
+.visual .inner .bottom .rightBox {padding-left: 106px; width: 50%; border-left: 1px solid #b9dc5f; box-sizing: border-box; padding-top: 10px;}
+.visual .inner .bottom .rightBox p {font-size: 18px; letter-spacing: -1px; line-height: 1.4; font-weight: 200; color: #333;}
+.visual .inner .bottom .rightBox .top {margin-bottom: 40px;}
+
+/* .motion */
+.visual .inner .bottom.motion {animation-name: slide_up; animation-duration: .8s;}
+@keyframes slide_up {
+    0% {transform: translateY(350px);}
+}
+
+/* who */
+.who { padding-bottom: 200px; box-sizing: border-box;}
+.who .inner {margin-top: 80px;}
+.who .inner .titleBox h2 {font-size: 70px; letter-spacing: -1px; color: #B9DC5F;}
+.who .inner .imgBox .img {width: 515px; height: 763px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.who .inner .imgBox .img img{width: 100%; height: 100%;}
+
+.who .inner .listBox {margin-top: 120px; display: flex; justify-content: space-between;}
+.who .inner .listBox .left { text-align: left;}
+.who .inner .listBox .right  {text-align: right;}
+
+.who .inner .listBox .num {font-size: 16px; letter-spacing: -1px; color: #888; font-weight: bold; margin-bottom: 12px;}
+
+.who .inner .listBox .tit {font-size: 26px; letter-spacing: -1px; font-weight: bold; color: #B9DC5F; margin-bottom: 27px;}
+.who .inner .listBox .txt { font-size: 20px; letter-spacing: -1px; color: #333; font-weight:400; margin-bottom: 8px;}
+.who .inner .listBox .txt:last-child {margin-bottom: 0;}
+.who .inner .listBox .left .txtSub {font-size: 16px; font-weight: 200; color: #acacac; margin-top: 5px; margin-bottom: 18px;}
+
+.who .inner .listBox .box_a {margin-bottom: 154px;}
+.who .inner .listBox .box_b {margin-bottom:180px;}
+
+.who .inner .listBox .right .box1 {margin-bottom: 150px;}
+.who .inner .listBox .right .box1 .txt_a {font-size: 18px; font-weight: 300; letter-spacing: -1px; color: #333;}
+.who .inner .listBox .right .box1 .txt_a:first-child { margin-right: 18px;}
+.who .inner .listBox .right .box1 .flexBox_a { margin-bottom: 20px;}
+
+.who .inner .listBox .right .flexBox_a {display: flex; justify-content: flex-end;}
+.who .inner .listBox .right .flexBox_b {display: flex; justify-content: flex-end;}
+
+.who .inner .listBox .right .box2 {margin-bottom: 110px;}
+.who .inner .listBox .right .box2  .txt {margin-bottom:24px;}
+.who .inner .listBox .right .box2  .txt span {color: #888;font-size: 16px; letter-spacing: -1px;}
+.who .inner .listBox .right .box2 .txtSub {font-size: 16px; font-weight: 200; color: #acacac;}
+.who .inner .listBox .right .box2 .txtSub:first-child {margin-right: 16px;}
+.who .inner .listBox .right .box2 .flexBox_b .txtSub:nth-child(2) {margin-right: 15px;}
+.who .inner .listBox .right .box2 .flexBox_a { margin-bottom: 8px;}
+
+.who .inner .listBox .right .box3 {margin-bottom: 100px;}
+.who .inner .listBox .right .box3 p.img {margin-right: 10px;}
+.who .inner .listBox .right .box3 .flexBox_a p.img:nth-child(3) {margin-right: 0;}
+.who .inner .listBox .right .box3 .flexBox_b p.img:nth-child(4) {margin-right: 0;}
+.who .inner .listBox .right .box3 .flexBox_a p.img {margin-bottom: 10px;}
+
+/* motion */
+.who .inner .titleBox.motion {animation-name: slide_up; animation-duration: .7s;}
+.who .inner .listBox .left li .box_a.motion {animation-name: slide_up; animation-duration: .5s;}
+.who .inner .listBox .left li .box_b.motion {animation-name: slide_up; animation-duration: .5s;}
+.who .inner .listBox .left li .box_c.motion {animation-name: slide_up; animation-duration: .5s;}
+.who .inner .listBox .right li .box1.motion {animation-name: slide_up; animation-duration: .5s;}
+.who .inner .listBox .right li .box2.motion {animation-name: slide_up; animation-duration: .5s;}
+.who .inner .listBox .right li .box3.motion {animation-name: slide_up; animation-duration: .5s;}
+.who .inner .listBox .right li .box4.motion {animation-name: slide_up; animation-duration: .5s;}
+
+
+
+
+/* strengths */
+.strengths {width: 100%; height: 100vh; background: #030303; position: relative;}
+.strengths .inner {height: 100%; display: flex; align-items: center; justify-content: center;}
+.strengths .inner .listBox {width: 40%;margin-left: 25px; position: relative;}
+.strengths .inner .textBox { text-align: center;}
+.strengths .inner .textBox p {font-size: 18px; color: #bbb; margin-top: 40px;}
+.strengths .inner ul {display: flex; justify-content: space-between;}
+.strengths .inner ul li .top{ width: 582px; height: 366px; padding: 50px 60px 30px 60px; box-sizing: border-box;  border: 1px solid #ddd; border-radius: 20px; margin-bottom: 70px;  background: #fff; color: #333;}
+.strengths .inner ul li .bottom{ width: 582px; height: 366px; padding: 50px 60px 30px 60px; box-sizing: border-box;  border: 1px solid #ddd; border-radius: 20px; margin-bottom: 70px;  background: #fff; color: #333;}
+.strengths .inner ul li .img {margin-bottom: 85px; }
+.strengths .inner ul li h3 {font-size: 26px; font-weight: 500; margin-bottom: 40px;}
+.strengths .inner ul li p {font-size: 18px;letter-spacing: -1px; line-height: 1.4; color: #888;}
+
+
+
+.strengths .inner .listTop  {position: absolute; top: 8%; left: 1%;}
+.strengths .inner .listTop li:first-child {margin-right: 270px;}
+.strengths .inner .listBottom  {position: absolute; bottom: 0; right: -5%;}
+.strengths .inner .listBottom li:first-child {margin-right: 270px;}
+
+/* motion */
+.strengths .inner .listTop .top.motion {animation-name: top-up; animation-duration: 0.3s;}
+.strengths .inner .listBottom .bottom.motion {animation-name: bottom-up; animation-duration: 0.3s;}
+@keyframes top-up {
+    0% {transform: translateY(400px);}
+}
+@keyframes bottom-up {
+    0% {transform: translateY(500px);}
+}
+
+
+/* love */
+.love { text-align: center; padding: 500px 0; box-sizing: border-box;}
+.love .title1 h3 {font-size: 90px; color: #B9DC5F; margin-bottom: 12px;}
+.love .title1 p {font-size: 18px; font-weight: 200; letter-spacing: -1px; margin-bottom: 300px; }
+
+.love .title2 { width: 100%; height: 100vh; padding-top: 30vh; box-sizing: border-box;}
+.love .title2 h3 {font-size: 90px; color: #B9DC5F; margin-bottom: 12px;}
+.love .title2 p {font-size: 18px; font-weight: 200; letter-spacing: -1px;  line-height: 1.3;}
+
+.love .title3 {width: 100%; height: 100vh; padding-top: 30vh; box-sizing: border-box;}
+.love .title3 h3 {font-size: 90px; color: #B9DC5F; margin-bottom: 12px;}
+.love .title3 p {font-size: 18px; font-weight: 200; letter-spacing: -1px;  line-height: 1.3;}
+
+.love .title4 {width: 100%; height: 100vh; padding-top: 30vh; box-sizing: border-box;}
+.love .title4 h3 {font-size: 90px; color: #B9DC5F; margin-bottom: 12px;}
+.love .title4 p {font-size: 18px; font-weight: 200; letter-spacing: -1px;  line-height: 1.3;}
+
+.love ul {width: 70%; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
+.love ul li {width: 45%; margin-top: 200px;}
+.love ul li:nth-child(2n) {margin-top: 0;}
+.love ul li .imgBox {width: 80%; border-radius: 20px; overflow: hidden;}
+.love ul li .imgBox img{width: 100%;}
+
+
+
+/* footer */
+footer {background: #030303;height: 1600px;  color: #fff; position: relative; overflow: hidden;}
+
+footer .leftBox {color: #fff; margin-bottom: 120px;}
+footer .leftBox .txt {line-height: 1.6; font-size: 16px; font-weight: 300; transform: rotate(-90deg); position: absolute; left: -80px; bottom: 19%; width: 300px;}
+footer .leftBox > .img img{ margin-left: 38px; position: absolute;bottom: 110px; left: 5px;}
+
+footer .inner {position: relative; height: 100%; padding-top: 100px; box-sizing: border-box; width: 90%;}
+footer .inner .dont {font-size: 200px; text-align: center;}
+footer .inner .dont span {font-style: italic;}
+
+footer .inner .toSay {display: flex; }
+footer .inner .toSay .a {font-size: 230px; margin-right: 800px; margin-left: 0px;}
+footer .inner .toSay span {font-size: 180px; font-style: italic;}
+
+footer .inner .imgBox .img {position: absolute; top: 29%; left: 4%; animation-name: spin; animation-duration: 12s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes spin {
+    100% {transform:rotate(360deg);}
+}
+footer .inner .imgBox .img2 {position: absolute; top: 30%; left: 46%;}
+
+footer .inner .min { text-align: center; font-size: 200px;padding-top: 250px; box-sizing: border-box;}
+footer .inner .min span {font-style: italic;}
+
+footer .inner > .img  {text-align: center; margin-top: 42px;}
+
+footer .inner .email {text-align: center; margin-top: 50px;}
+footer .inner .email p.mail { font-size: 110px; letter-spacing: -3px; border-bottom: 1px solid #DDEBC8; color: #DDEBC8; display: inline-block; font-weight: 600; margin-bottom: 34px;}
+footer .inner .email span {font-size: 48px; letter-spacing: -1px; font-weight: 200;}
+footer .inner .email p.img {margin-bottom: 28px;animation-name: spin; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: linear;}
+
+/* motion */
+footer .inner .dont.motion {animation-name: footer-up; animation-duration: .4s;}
+footer .inner .toSay.motion {animation-name: footer-up; animation-duration: .6s;}
+footer .inner .min.motion {animation-name: footer-up; animation-duration: .7s;}
+footer .inner .insta.motion {animation-name: footer-up; animation-duration: .6s;}
+
+@keyframes footer-up {
+    0% {transform: translateY(180px);}
+}

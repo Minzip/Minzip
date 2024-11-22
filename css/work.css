@@ -1,0 +1,122 @@
+@import url('https://fonts.cdnfonts.com/css/bodoniflf');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.cdnfonts.com/css/dream-orphans');
+
+
+body{font-family: 'Pretendard';  font-weight: normal; background: #030303;}
+.wrap.on {overflow: hidden;}
+.wrap { background: #030303; color: #fff;}
+.en2{font-family: 'BodoniFLF', sans-serif;}
+.en3{font-family: 'Dream Orphans', sans-serif;}
+.inner {position: relative; margin: 0 auto; width: 80%;}
+
+
+
+/* header */
+header {width: 100%; display: flex; justify-content: space-between; position:fixed; padding: 40px 60px; box-sizing: border-box; z-index: 1000;}
+header .logo {width: 80px;}
+header .logo a svg{margin-top: 10px;}
+header .logo a .blacklogo {fill: none;stroke: #555;stroke-width: 4px;}
+header .logo p {width: 8%; position: absolute;left: 100px; top: 50%; transform: translatey(-50%); font-size: 16px; font-weight: normal; line-height: 1.1; color: #fff; letter-spacing: -1px;}
+
+header .gnb{color: #fff; font-size: 16px; font-weight: normal; letter-spacing: -1px;}
+header .gnb li {margin-bottom: 7px;}
+header .gnb li span {color: #B9DC5F;}
+
+header .gnb li .contact.active {color: #B9DC5F;}
+header .gnb li span.active {color: #fff;}
+
+/* visual */
+.visual { height: 100vh; overflow: hidden;}
+.visual .inner {height:100%}
+.visual .inner .title {font-size: 200px; }
+.visual .inner .title > p {font-size: 110px; letter-spacing: -1px; font-weight: 300; color: #919191; display: inline-block; border: 1px solid #888; border-radius: 50%; padding: 35px 130px; box-sizing: border-box; margin-left: 300px;}
+.visual .inner .title  h2 {font-weight: 300; color: #fff;} 
+.visual .inner .title h2 span.a {color: #DDEBC8;}
+.visual .inner .title .uiuxtit {margin-top: 130px; margin-left: 400px;}
+.visual .inner .title .codingtit{position: absolute; right: 0;top: 30%; z-index: 1;}
+.visual .inner .title .designtit {position: absolute; bottom: 18%; left: 0%;}
+
+.visual .inner .imgBox {position: absolute; top: 20%; right: 12%; animation-name: spin; animation-duration: 5s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes spin {
+    100% {transform:rotate(360deg);}
+}
+
+/* motion */
+.visual .inner .title .uiuxtit.motion {animation-name: uiux; animation-duration: .5s;}
+.visual .inner .title .codingtit.motion {animation-name: coding; animation-duration: .9s;}
+.visual .inner .title .designtit.motion {animation-name: design;animation-duration: 1.5s;}
+@keyframes uiux {
+    0% {transform: translateX(-400px);}
+}
+@keyframes coding {
+    0% {transform: translateX(400px);}
+}
+@keyframes design {
+    0% {transform: translateX(-400px);}
+}
+
+
+
+
+/* project */
+.project {padding: 200px 0; box-sizing: border-box;}
+.project .inner {display: flex; justify-content: space-between; margin: 60px auto;}
+.project.textBox {width: 28%;}
+.project .textBox h3 {font-size: 70px; font-weight: bold; -webkit-sticky; position: sticky; top: 50%; transform: translateY(-50%);}
+.project .textBox h3 span {color: #B9DC5F;}
+
+
+.project .listBox {width: 70%; display: flex; justify-content: space-between; flex-wrap: wrap; perspective: 900px; overflow: hidden;}
+/* overflow: hidden을 주는 이유는 스크롤트리거를 작성하게 되면 가로스크롤이 생겨서 이를 가려주기 위해 작성 */
+.project .listBox li {width: 32.2%;}
+.project .listBox li .img {background: var(--sub-color); border-radius: 10px; text-align: center;}
+.project .listBox li .img img {width: 100%;}
+.project .listBox li h4 {display: flex; justify-content: space-between; margin: 15px 0 50px; font-weight: normal;}
+.project .listBox li h4 span.b {opacity: 0.5;}
+
+
+
+
+
+
+/* footer */
+footer {background: #030303;height: 1600px;  color: #fff; position: relative; overflow: hidden;}
+
+footer .leftBox {color: #fff; margin-bottom: 120px;}
+footer .leftBox .txt {line-height: 1.6; font-size: 16px; font-weight: 300; transform: rotate(-90deg); position: absolute; left: -80px; bottom: 19%; width: 300px;}
+footer .leftBox > .img img{ margin-left: 38px; position: absolute;bottom: 110px; left: 5px;}
+
+footer .inner {position: relative; height: 100%; padding-top: 100px; box-sizing: border-box; width: 90%;}
+footer .inner .dont {font-size: 200px; text-align: center;}
+footer .inner .dont span {font-style: italic;}
+
+footer .inner .toSay {display: flex; }
+footer .inner .toSay .a {font-size: 230px; margin-right: 800px; margin-left: 0px;}
+footer .inner .toSay span {font-size: 180px; font-style: italic;}
+
+footer .inner .imgBox .img {position: absolute; top: 29%; left: 4%; animation-name: spin; animation-duration: 12s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes spin {
+    100% {transform:rotate(360deg);}
+}
+footer .inner .imgBox .img2 {position: absolute; top: 30%; left: 46%;}
+
+footer .inner .min { text-align: center; font-size: 200px;padding-top: 250px; box-sizing: border-box;}
+footer .inner .min span {font-style: italic;}
+
+footer .inner > .img  {text-align: center; margin-top: 42px;}
+
+footer .inner .email {text-align: center; margin-top: 50px;}
+footer .inner .email p.mail { font-size: 110px; letter-spacing: -3px; border-bottom: 1px solid #DDEBC8; color: #DDEBC8; display: inline-block; font-weight: 600; margin-bottom: 34px;}
+footer .inner .email span {font-size: 48px; letter-spacing: -1px; font-weight: 200;}
+footer .inner .email p.img {margin-bottom: 28px;animation-name: spin; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: linear;}
+
+/* motion */
+footer .inner .dont.motion {animation-name: footer-up; animation-duration: .4s;}
+footer .inner .toSay.motion {animation-name: footer-up; animation-duration: .6s;}
+footer .inner .min.motion {animation-name: footer-up; animation-duration: .7s;}
+footer .inner .insta.motion {animation-name: footer-up; animation-duration: .6s;}
+
+@keyframes footer-up {
+    0% {transform: translateY(180px);}
+}

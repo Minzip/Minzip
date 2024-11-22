@@ -1,0 +1,350 @@
+@import url('https://fonts.cdnfonts.com/css/bodoniflf');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.cdnfonts.com/css/dream-orphans');
+
+
+body{font-family: 'Pretendard';  font-weight: normal;}
+.wrap.on {overflow: hidden;}
+.wrap {overflow: hidden; background: #030303; color: #fff;}
+.en2{font-family: 'BodoniFLF', sans-serif;}
+.en3{font-family: 'Dream Orphans', sans-serif;}
+.inner {position: relative; margin: 0 auto; width: 80%;}
+.textBox h2 {font-size: 72px; font-weight: bold; color: #B1C68E; letter-spacing: -1px;}
+.textBox p {font-size: 18px; color: #000; font-weight: 200;}
+
+
+
+/* header */
+header {width: 100%; display: flex; justify-content: space-between; position:fixed; padding: 40px 60px; box-sizing: border-box; z-index: 1000;}
+header .logo {width: 80px;}
+header .logo a svg{margin-top: 10px;}
+header .logo a .blacklogo {fill: none;stroke: #555;stroke-width: 4px;}
+header .logo p {width: 8%; position: absolute;left: 100px; top: 50%; transform: translatey(-50%); font-size: 16px; font-weight: normal; line-height: 1.1; color: #fff; letter-spacing: -1px;}
+
+header .gnb{color: #fff; font-size: 16px; font-weight: normal; letter-spacing: -1px;}
+header .gnb li {margin-bottom: 7px;}
+header .gnb li span {color: #B9DC5F;}
+
+header .gnb li .contact.active {color: #B9DC5F;}
+header .gnb li span.active {color: #fff;}
+/* visual */
+.visual {background: url(../img/main/visualbg.png); height: 1230px;}
+
+.visual .inner .port span.a {position: absolute; left: 227px; top: 224px;opacity: 0; transform: translateY(-50px); animation: port-a 1s ease forwards;}
+
+@keyframes port-a {
+    from {opacity: 0;transform: translateY(-50px);}
+    to {opacity: 1;transform: translateY(0);}
+}
+
+
+.visual .inner .port span.b {position: absolute; left:518px; top:210px; opacity: 0; transform: translateY(-50px); animation: port-b 1s ease forwards;}
+@keyframes port-b {
+    from {opacity: 0;  transform: translateY(200px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.visual .inner .year span.a {position: absolute; left: -25px;top:510px;opacity: 0; transform: translateY(-50px); animation: port-a 1s ease forwards }
+.visual .inner .year span.b {position: absolute; left: 272px; top: 512px; opacity: 0; transform: translateY(-50px); animation: port-b 1s ease forwards;}
+
+.visual .inner .created span.a {position: absolute; left: 481px; top: 700px;opacity: 0; transform: translateY(-50px); animation: port-a 1s ease forwards}
+.visual .inner .created span.b {position: absolute; right: 565px; top: 690px;  opacity: 0; transform: translateY(-50px); animation: port-b 1s ease forwards;}
+
+.visual .inner .bymin span.a {position: absolute; right: 643px; top: 943px;opacity: 0; transform: translateY(-50px); animation: port-a 1s ease forwards}
+.visual .inner .bymin span.b {position: absolute; right: 216px; top: 932px;opacity: 0; transform: translateY(-50px); animation: port-b 1s ease forwards}
+
+.visual .inner .textBox {position: absolute; left: 13%; top: 950px; font-weight: normal;}
+.visual .inner .textBox .tit {font-size: 19px; color: #c0c0c0; line-height: 1.2; margin-bottom: 13px;}
+.visual .inner .textBox .tit span {color: #B1C68E;}
+.visual .inner .textBox .txt {color: #656565; font-size: 18px;}
+
+.visual .inner .spinImg {position: absolute;right: 24%; top: 558px; animation-name: spin; animation-duration: 5s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes spin {
+    100% {transform:rotate(360deg);}
+}
+
+.visual .inner p.show {display: inline-block; position: absolute; right: 19%;top: 480px;   letter-spacing: 1px; font-size: 20px; color: #fff; font-weight: 100;}
+.visual .inner p.mins {display: inline-block; position: absolute; right: 218px; top: 505px; letter-spacing: 1px; font-size: 20px; color: #fff; font-weight: 100;}
+.visual .inner p.mins span {color: #B1C68E; border-bottom: #B1C68E solid 1px; font-style: italic;}
+
+
+
+/* just about */
+.justabout {background: #030303; color: #fff; padding: 200px 0;}
+.justabout .tit {text-align: center;}
+.justabout .tit span {display: block; animation-name: spin; animation-duration: 10s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes spin {
+    100% {transform:rotate(360deg);}
+}
+
+.justabout .tit .about {transform:translateX(-50%)   rotate(90deg); font-size: 78px; color: #DDEBC8; position: absolute; left: 50%;top: 300px;}
+.justabout .tit::after {content: ''; position: absolute; background: #fff; width: 1px; height: 120px; left: 49%; transform: rotate(15deg); top: 532px;}
+
+.justabout .svg-container {width: 100%; display: flex; justify-content: center; align-items: center; padding-top: 150px;}
+.justabout .stg-container svg {overflow: visible;}
+.justabout .stg-container text {overflow: visible;}
+#text {font-size: 2px; fill: #747474; text-anchor: middle; transform-origin: center;}
+
+.justabout .imgBox .img {position: absolute; top: 32%; left: 19%}
+
+.justabout .txt ul {position: absolute; top: 43%; left: 50%; transform: translateX(-50%); font-size: 50px; letter-spacing: -1px;}
+.justabout .txt ul li{margin-bottom: 3px; text-align: center;}
+.justabout .txt ul li span {color: #DDEBC8;}
+.justabout .txt ul li.a {font-style: italic;}
+.justabout .txt ul li:nth-child(7) {margin-top: 43px;}
+.justabout .txt ul li:last-child {margin-top: 30px;}
+
+
+
+/* pleasure */
+.pleasure .topBox {height: 100vh; width: 80%;margin: 120px auto; text-align: center; position: relative; }
+.pleasure .topBox span{display: block;}
+.pleasure .topBox span.hand {margin-bottom: 86px;}
+.pleasure .topBox span.hand img{transition: transform 0.3s ease;}
+
+.pleasure .topBox span.spin { animation-name: spin; animation-duration: 10s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes spin {
+    100% {transform:rotate(360deg);}
+}
+.pleasure .topBox h2 {font-size: 150px; position: absolute; left: 50%; top: 50%; transform: translatex(-50%); width: 100%; line-height: 1.1;}
+
+.pleasure .bottomBox { padding: 180px 0; box-sizing: border-box;}
+.pleasure .bottomBox ul {display: flex; justify-content: space-between; width: 70%; margin: 0 auto;}
+.pleasure .bottomBox ul .left {width: 36%;}
+.pleasure .bottomBox ul .left h3 {font-size: 30px; font-weight: 500; letter-spacing: -1px; margin-bottom: 10px; line-height: 1.4;}
+.pleasure .bottomBox ul .left h3 span {color: #D7EEB4;}
+.pleasure .bottomBox ul .left p {font-size: 18px; color: #888; margin-bottom: 40px;}
+.pleasure .bottomBox ul .left a {display: inline-block; padding: 10px 40px; border: 1px solid #B1C68E; border-radius: 50px; color: #ddd; font-size: 18px; text-transform: uppercase;}
+
+.pleasure .bottomBox ul .right {width: 50%; color: #bbb; font-size: 18px; letter-spacing: -1px; line-height: 1.5;}
+.pleasure .bottomBox ul .right .top {margin-bottom: 40px;}
+
+/* motion */
+.pleasure .bottomBox ul .left .text.motion {animation-name: slide_up; animation-duration: .3s;}
+@keyframes slide_up {
+    0% {transform: translateY(350px);}
+}
+.pleasure .bottomBox ul .right .text.motion {animation-name: slide_up; animation-duration: .8s;}
+
+
+/* hobby */
+.hobby {padding-top: 200px;height: 100vh;}
+.hobby .inner {display: flex; justify-content: space-between; height: 100%;}
+.hobby .inner .textBox {width: 36%;height: 100%; padding-top: 290px; box-sizing: border-box;  margin-left: 30px;}
+.hobby .inner .textBox h2 {margin-bottom: 30px; }
+.hobby .inner .textBox p {line-height: 1.4;}
+
+.hobby .inner .listBox {width: 49%;position: relative;}
+.hobby .inner .listBox li {position: absolute; right: 0%;top: 30%; width: 480px; height: 582px; opacity: 1; border-top-left-radius: 20px; overflow: hidden;}
+.hobby .inner .listBox li a img{width: 100%;}
+.hobby .inner .listBox li.img3 {top: 6%;  z-index: 1;}
+.hobby .inner .listBox li.img2 {top: 11%;right: 5%; z-index: 2;}
+.hobby .inner .listBox li.img1 {top: 23%; right: 15%; z-index: 3;}
+
+/* motion */
+.hobby .inner .textBox.motion {animation-name: title-up; animation-duration: .5s;}
+@keyframes title-up {
+    0% {transform: translateY(400px)}
+}
+
+/* strengths */
+.strengths {margin-top: 200px; padding-top: 250px; }
+.strengths .inner {display: flex; justify-content: space-between;height: 100%; position: relative;}
+.strengths .inner .listBox {width: 40%;margin-left: 25px; position: relative;}
+.strengths .inner .listBox li {box-sizing: border-box;  border: 1px solid #ddd; border-radius: 20px; margin-bottom: 70px;  padding: 80px 60px 40px 60px; background: #fff; color: #aaa; filter: grayscale(-50%);}
+.strengths .inner .listBox li .img {margin-bottom: 85px; }
+.strengths .inner .listBox li .img svg {filter: grayscale(100%);}
+.strengths .inner .listBox li h3 {font-size: 26px; font-weight: 500; margin-bottom: 40px;}
+.strengths .inner .listBox li p {font-size: 18px;letter-spacing: -1px; line-height: 1.4; color: #888;}
+
+/* list event */
+.strengths .inner .listBox li.on {background: #fff; border: 2px solid #B9DC5F; color: #333;}
+
+.strengths .inner .fix {position: absolute; width: 50%; height: 100%; right: 0; top: 0;}
+.strengths .inner .fix .fixBox {margin-top: 144px; text-align: right; position: absolute; bottom:-60%; right: 10%; transform: translate(-10%,-60%); transition: .2s;}
+.strengths .inner .fix .fixBox.on {position: fixed; bottom: 38%; right: 10%; transform: translateY(-38%);}
+.strengths .inner .fix .fixBox h2 {margin-bottom: 27px; font-size: 72px; font-weight: bold; color: #B1C68E; letter-spacing: -1px; transition: .5s;}
+.strengths .inner .fix .fixBox p { font-size: 18px; font-weight: 200; color: #000;}
+.strengths .inner .fix .fixBox .spin {position: fixed; right: 0%; bottom: -200%;}
+.strengths .inner .fix .fixBox .spin img{animation-name: spin; animation-duration: 8s; animation-iteration-count: infinite; animation-timing-function: linear;}
+
+/* motion */
+.strengths .inner .fix .fixBox.motion {animation-name: title-up; animation-duration: .7s;}
+
+
+/*line */
+.simply-scroll-container {margin-top: 600px; background: #030303; color: #B9DC5F;  font-size: 180px; letter-spacing: -1px; font-weight: 700; position: relative; overflow: hidden;  width: 100%; padding: 150px 0;}
+.simply-scroll-clip {overflow: hidden;}
+.simply-scroll .simply-scroll-list {display: flex; flex-wrap: nowrap;  transform: rotate(-2deg);padding: 200px 0; box-sizing: border-box; }
+.simply-scroll .simply-scroll-list li { display: flex;}
+.simply-scroll .simply-scroll-list li img {width: 71px; height: 71px; align-self: center; margin: 0 58px;}
+
+
+
+/* skills */
+.skills {height: 100vh;  display: flex; align-items: center; justify-content: center; position: relative;  margin-bottom: 200px;}
+.skills .textBox {text-align: center; }
+.skills .textBox h2 {font-size: 130px; margin-bottom: 24px; font-weight: normal;}
+.skills .textBox p {color: #fff;line-height: 1.5; margin-bottom: 24px;}
+.skills .textBox ul {color: #888; display: flex;justify-content: space-between;margin: 0 auto; }
+.skills .textBox .top { width: 80%;}
+.skills .textBox .top li {margin-right: 50px;}
+.skills .textBox .top li:nth-child(3) {margin-right: 0;}
+.skills .textBox .bottom {margin-top: 8px; width: 85%;}
+
+.skills .card li {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
+
+
+/* work */
+.work {position: relative;  overflow: hidden; }
+.work .inner { display: flex;justify-content: space-between;position: relative;}
+.work .inner .leftBox {padding-top: 200px; position: relative;}
+.work .inner .leftBox .textBox {position:absolute; bottom:-15%; left: 0%; transition: bottom 0.5s ease;}
+.work .inner .leftBox .textBox h2 {margin-bottom: 24px; font-weight: normal; font-size: 110px;}
+.work .inner .leftBox .textBox p {margin-bottom: 110px; color: #fff; line-height: 1.4;}
+
+.work .inner .right {width: 50%;  display: flex;justify-content: space-between; margin-top: 100px; flex-wrap: wrap;}
+.work .inner .right ul a .imgBox {position: relative;}
+.work .inner .right ul li {margin-bottom: 63px;}
+.work .inner .right ul li a .imgBox img{filter: brightness(100%);}
+.work .inner .right ul.a {margin-top: 220px; }
+
+/* .on */
+.work .inner .leftBox .textBox.on {position: fixed; bottom: 15%; left: 10%; transition: bottom 0.5s ease;}
+
+/* hover */
+.work .right li a .imgBox::before {content: ''; width: 168px; height: 168px; border-radius: 100%; border: 1px solid #fff; background: url(../img/main/readMore2.png)no-repeat center/35px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(45deg); z-index: 1; transition: all 0.3s; opacity: 0;}
+.work .right li a .imgBox:after {content: ''; width: 0px; height: 0px; border-radius: 100%; background: #fff url(../img/main/readMore3.png)no-repeat center/160px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 1; animation-name: more; animation-duration: 10s; animation-iteration-count: infinite; animation-timing-function: linear; transition: .4s;}
+@keyframes more{
+    0%{transform: translate(-50%,-50%) rotate(0deg);}
+    100%{transform: translate(-50%,-50%) rotate(360deg);}
+}
+
+.work .inner .right ul li a:hover .imgBox img {filter: brightness(60%); transition: 0.3s;}
+.work .right li a:hover .imgBox::before { opacity: 1; z-index: 2;}
+.work .right li a:hover .imgBox::after { width: 168px; height: 168px; }
+
+/* motion */
+.work .inner .leftBox .textBox.motion {animation-name: title-up; animation-duration: .6s;}
+.work .inner .leftBox .subBox.motion {animation-name: title-up2; animation-duration: .7s;}
+@keyframes title-up2 {
+    0% {transform: translateY(200px)}
+}
+
+/* ncs */
+.ncs { height: 100vh; background: #030303; color: #fff; position: relative;}
+.ncs .inner {display: flex; justify-content: space-between;  box-sizing: border-box;}
+.ncs .inner .leftBox {margin-top: 200px;}
+.ncs .inner .leftBox .textBox h2 { font-weight: normal; margin-bottom: 24px; font-size: 100px;}
+.ncs .inner .leftBox .textBox p {line-height: 1.4; color: #fff;}
+
+.ncs .inner .rightBox {width: 55%; font-size: 18px; font-weight: 200; margin-top: 170px;}
+.ncs .inner .rightBox .top {display: flex; justify-content: space-between; padding: 20px 110px; background: rgba(255, 255, 255, 0.3);}
+.ncs .inner .rightBox .top li {font-size: 19px; font-weight: 300;}
+
+.ncs .inner .rightBox .bottom li {position: relative;}
+.ncs .inner .rightBox .bottom li a {display: flex; padding: 25px 0; box-sizing: border-box; border-bottom: 1px solid #888; cursor: pointer; overflow: hidden; }
+.ncs .inner .rightBox .bottom li  .a {width: 33%; text-align: center;}
+.ncs .inner .rightBox .bottom li  .b { width: 36%; text-align: center;}
+.ncs .inner .rightBox .bottom li  .c { width: 32%; text-align: center;}
+
+/* hover */
+.ncs .inner .rightBox .bottom li a:hover {background: #B9DC5F; transition:  .3s ease;}
+.ncs .inner .rightBox .bottom li a:hover p {color: #000;}
+/* motion */
+.ncs .inner .leftBox .textBox.motion {animation-name: title-up; animation-duration: .6s;}
+.ncs .inner .rightBox.motion {animation-name: title-up; animation-duration: .8s;}
+
+
+/* process */
+.process {background: #030303; color: #fff;}
+.process .inner {position: relative; width: 90%;}
+.process .inner .textBox {position: absolute; top: 13%; left: 29%;}
+.process .inner .textBox h2 { font-size: 70px; font-weight: normal; margin-bottom: 30px;}
+.process .inner .textBox p { color: #888; font-size: 20px; line-height: 1.3;}
+
+
+.process .inner li {background: #b1dd40; color: #000;width: 414px;height: 390px; box-sizing: border-box; border-radius: 30px; border-top-left-radius: 0;}
+.process .inner li p.txt {color: #333; font-size: 20px; font-weight: 200; line-height: 1.3; margin-bottom: 50px; letter-spacing: -1px;}
+.process .inner li p.tit {font-size: 50px; font-weight: 300; letter-spacing: -1px; }
+.process .inner li .box {margin-top: 200px; margin-left: 30px;}
+
+
+.process .inner .top ul {display: flex; justify-content: space-between; margin-top: 110px;}
+
+.process .inner .middle ul {display: flex; justify-content: space-between; margin: 0 420px;}
+
+.process .inner .bottom ul{display: flex; justify-content: space-between; margin-top: 36px; margin-bottom: 110px;}
+.process .inner .bottom li:nth-child(2) {margin-left: 170px;}
+.process .inner .bottom .img {margin-top: 280px;}
+
+/* motion */
+.process .inner .top.motion {animation-name: box-up; animation-duration: .4s;}
+.process .inner .middle.motion {animation-name: box-up; animation-duration: .6s;}
+.process .inner .bottom.motion {animation-name: box-up; animation-duration: .8s;}
+@keyframes box-up {
+    0% {transform: translateY(250px);}
+}
+
+/* footer */
+footer {background: #030303;height: 3064px;  color: #fff; position: relative;}
+
+footer .leftBox {color: #fff; margin-bottom: 120px;}
+footer .leftBox .txt {line-height: 1.6; font-size: 16px; font-weight: 300; transform: rotate(-90deg); position: absolute; left: -80px; bottom: 10%; width: 300px;}
+footer .leftBox > .img img{ margin-left: 38px; position: absolute;bottom: 110px; left: 5px;}
+
+footer .inner {position: relative; height: 100%; padding-top: 100px; box-sizing: border-box; width: 90%;}
+footer .inner .dont {font-size: 200px; text-align: center;}
+footer .inner .dont span {font-style: italic;}
+
+footer .inner .toSay {display: flex; }
+footer .inner .toSay .a {font-size: 230px; margin-right: 800px; margin-left: 0px;}
+footer .inner .toSay span {font-size: 180px; font-style: italic;}
+
+footer .inner .imgBox .img {position: absolute; top: 14%; left: 6%; animation-name: spin; animation-duration: 12s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes spin {
+    100% {transform:rotate(360deg);}
+}
+footer .inner .imgBox .img2 {position: absolute; top: 16%; left: 46%;}
+
+footer .inner .min { text-align: center; font-size: 200px;padding-top: 250px; box-sizing: border-box;}
+footer .inner .min span {font-style: italic;}
+
+footer .inner > .img  {text-align: center; margin-top: 42px;}
+
+footer .inner .email {text-align: center; margin-top: 50px;}
+footer .inner .email p.mail { font-size: 110px; letter-spacing: -3px; color: #DDEBC8; display: inline-block; font-weight: 600; margin-bottom: 34px; border-bottom: 1px solid #DDEBC8;}
+
+footer .inner .email p.img {margin-bottom: 28px;animation-name: spin; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: linear;}
+footer .inner .email span {font-size: 13px; letter-spacing: -1px; font-weight: 200;}
+
+
+footer .inner .email p.mail:hover { color: #fff; border-bottom: none;}
+
+
+footer .inner .spinImg {text-align: center; margin-top: 300px;}
+footer .inner .spinImg .img {animation-name: spin; animation-duration: 10s; animation-iteration-count: infinite; animation-timing-function: linear;}
+footer .inner .spinImg p.txt {font-size: 18px; font-weight: 200; letter-spacing: -1px; position: absolute; right: 38%; bottom: 28%; text-align: left;}
+
+footer .inner .insta {text-align: left; position: absolute; bottom: 13%; right: 30%;  font-size: 48px; font-weight: 100; letter-spacing: -1px;}
+footer .inner .insta p.a {color: #DDEBC8;}
+footer .inner .insta > p {margin-bottom: 7px;  color: #fff;}
+
+
+footer .inner .bottom {text-align: center; font-size: 31px; border-bottom: 1px solid #ddebc8; display: inline-block; position: absolute; left: 50%; bottom: 5%; transform: translateX(-50%); color: #DDEBC8;}
+
+
+/* motion */
+footer .inner .dont.motion {animation-name: footer-up; animation-duration: .4s;}
+footer .inner .toSay.motion {animation-name: footer-up; animation-duration: .6s;}
+footer .inner .min.motion {animation-name: footer-up; animation-duration: .7s;}
+footer .inner .insta.motion {animation-name: footer-up; animation-duration: .6s;}
+
+@keyframes footer-up {
+    0% {transform: translateY(180px);}
+}
+
+
+
+

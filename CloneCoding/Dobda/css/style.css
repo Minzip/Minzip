@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+/* layout */
+body {font-family: 'NanumSquare', sans-serif !important; font-size: 14px; color: #4e4e4e; line-height: 1.4;}
+.wrap {width: 100%; min-width: 1100px; overflow: hidden; position: relative;}
+
+/* header */
+.close, .open, .mo {display: none;}
+header {width: 100%; height: 120px; line-height: 120px; padding: 0 60px; box-sizing: border-box; position: fixed;}
+header .logo {display: block; font-size: 42px; float: left; letter-spacing: -6px; color: #39312b; font-weight: 900;}
+header nav {float: right;}
+header nav .gnb li {display: inline-block; margin-left: 60px;}
+header nav .gnb li a {display: block; font-size: 18px; text-transform: uppercase; position: relative;}
+header nav .gnb li a:after {content: ''; width: 0%; height: 1px; position: absolute; background: #888; left: 50%; transform: translateX(-50%); bottom: 47px; transition: all 0.5s;}
+header nav .gnb li a:hover:after,header nav .gnb li a:focus:after {width: 100%;}
+
+/* visual */
+.visual {margin-top: 120px; padding-bottom: 50px; position: relative;}
+.visual:before {content: ''; width: 55%; height: 400px; position: absolute; bottom: 0; right: 0; color: #f0f0f0;}
+.visual .img {width: 94%; position: relative;}
+.visual .img .imgBox {display: block; width: 100%; height: 100%; overflow: hidden;}
+.visual .img .imgBox img {width: 100%;}
+
+/* mask */
+.visual .img .mask {display: block; position: absolute; top: 0; width: 1px; height: 100%; background: rgba(255, 255, 255, 0.16);}
+.visual .img .mask.a {left: 0%;}
+.visual .img .mask.b {left: 25%;}
+.visual .img .mask.c {left: 50%;}
+.visual .img .mask.d {left: 75%;}
+
+.visual .img .page {position: absolute; right: -43px; top: 50%; transform: translateY(-50%);}
+.visual .title {position: absolute; top: 40%; left: 8%; color: #fff;}
+.visual .title h2 {font-size: 50px; margin-bottom: 30px;}
+.visual .title p {font-size: 20px; font-weight: 300; }
+
+/* menu */
+.visual .menu {position: absolute; bottom: 15%; left: 8%; display: flex;}
+.visual .menu li {margin-right: 60px;}
+.visual .menu li a {display: block; color: #fff; display: flex;}
+.visual .menu li a p {font-size: 20px; line-height: 1.6; margin-right: 20px;}
+.visual .menu li a p span {display: block; font-size: 15px; font-weight: 100; color: #aaa;}
+.visual .menu li a .arrow {display: block; margin-top: 10px; position: relative; z-index: 1;}
+.visual .menu li a .arrow:before {content: ''; width: 40px; height: 40px; background: rgba(252, 252, 252, 0.4); position: absolute; right: -10px; top: -10px; z-index: -1; transition: all 0.2s;}
+.visual .menu li a:hover .arrow:before, .visual .menu li a:focus .arrow:before {right: 0; top: 0;}
+
+.slick-dots {position: absolute; right: 4.5%; bottom: 30px;}
+.slick-dots li button {text-indent: -99999px; width: 12px; height: 12px; background: #ccc; border: none; cursor: pointer; margin-bottom: 15px;}
+
+/* slick active animation */
+.visual .slick-active .img .mask.a {animation-name: mask; animation-duration: 0.4s;}
+.visual .slick-active .img .mask.b {animation-name: mask; animation-duration: 0.6s;}
+.visual .slick-active .img .mask.c {animation-name: mask; animation-duration: 0.8s;}
+.visual .slick-active .img .mask.d {animation-name: mask; animation-duration: 1s;}
+
+@keyframes mask {
+    0% {width: 25%; background: #000;}
+    50% {width: 25%; background: #000;}
+    99% {background: #000;}
+}
+
+.visual .slick-active .title h2 {animation-name: slide-up; animation-duration: 1.5s;}
+
+@keyframes slide-up {
+    0% {opacity: 0;}
+    40% {opacity: 0; transform: translateY(40px);}
+}
+
+.visual .slick-active .title p {animation-name: slide-up; animation-duration: 2.2s;}
+.visual .slick-active .imgBox img {animation-name: scaleani; animation-duration: 5.2s;}
+
+@keyframes scaleani {
+    0% {transform: scale(1.3);}
+    30% {transform: scale(1.3);}
+}
+
+/* about */
+.about {width: 95%; margin: 40px auto; text-align: center; position: relative;}
+.about img {width: 100%;}
+.about .inner {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.about .inner h2 {font-size: 30px; color: #fff; font-weight: normal;}
+.about .inner .line {width: 35%; margin: 80px auto 30px; position: relative;}
+.about .inner .line span {display: block; width: 100%; height: 1px; background: rgba(255, 255, 255, 0.25);}
+.about .inner .line li {width: 6px; height: 6px; border-radius: 50%; background: #fff; position: absolute;}
+.about .inner .line li.a {left: 0; top: 2px;}
+.about .inner .line li.b {left: 50%; top: 2px; transform: translate(-50%);}
+.about .inner .line li.c {right: 0; top: -2px;}
+.about .inner .line li:before {content: ''; width: 100%; height: 100%; border-radius: 50%; background: rgba(255, 255, 255, 0.70); position: absolute; left: 50%; top: 50%; margin-top: -3px; margin-left: -3px; animation: dot 1.5s infinite;}
+@keyframes dot {
+    100% {opacity: 1; transform: scale(3.5); opacity: 0;}
+}
+
+.about .inner ul {width: 60%;  margin: 0 auto; display: flex;}
+.about .inner ul li {width: 33.3333%; font-size: 17px; font-weight: 100; color: #c5c5c5;}
+.about .inner ul li h3 {font-size: 18px; margin-bottom: 20px; font-weight: normal; color: #fff;}
+
+/* animation */
+@keyframes slide-up {
+    0% {opacity: 0;}
+    70% {opacity: 0; transform: translateY(40px);}
+}
+
+@keyframes opacity_ani {
+    0% {opacity: 0;}
+    70% {opacity: 0;}
+}
+
+@keyframes slide-up2 {
+    0% {opacity: 0;}
+    50% {opacity: 0; transform: translateY(60px);}
+}
+
+.about .inner.motion h2 {animation-name: slide-up; animation-duration: 0.8s;}
+.about .inner.motion .line span {animation-name: opacity_ani; animation-duration: 0.8s;}
+.about .inner.motion .line li.a {animation-name: opacity_ani; animation-duration: 1.2s;}
+.about .inner.motion .line li.b {animation-name: opacity_ani; animation-duration: 1.6s;}
+.about .inner.motion .line li.c {animation-name: opacity_ani; animation-duration: 2s;}
+.about .inner.motion ul li {animation-name: slide-up2; animation-duration: 0.8s;} 
+.about .inner.motion ul li:nth-child(2) {animation-duration: 2.8s;} 
+.about .inner.motion ul li:nth-child(3) {animation-duration: 3.2s;} 
+
+
+/* premium */
+.premium {width: 95%; margin: 40px auto; padding: 100px 0; box-sizing: border-box; height: 1020px; background: url(../img/con2_bg.jpg) no-repeat center/cover; position: relative;}
+.premium .txtImg {position: absolute; left: 0; top: 20%; display: block; width: 100%; overflow: hidden;}
+.premium .txtImg.motion {animation-name: widthAni; animation-duration: 2.5s;}
+
+@keyframes widthAni {
+    0% {width: 0%;}
+    40% {width: 0%;}
+    100% {width: 100%;}
+}
+
+
+.premium .title {position: absolute; left: 8%; top: 35%;}
+.premium .title h2 {font-size: 30px; margin-bottom: 20px;}
+.premium .title p {font-size: 19px; line-height: 1.6; margin-bottom: 30px;}
+.premium .title a {display: inline-block; position: relative; font-size: 24px;}
+.premium .title a:before {content: ''; width: 80px; height: 15px; background: rgba(0, 0, 0, 0.08); position: absolute; left: 0; bottom: 0;}
+
+.premium .banner li {position: absolute; width: 15%; box-shadow: 5px 6px 15px rgba (3,3,3,0.4);}
+.premium .banner li img {width: 100%;}
+.premium .banner li:nth-child(1) {left: 45%; top: 15%;}
+.premium .banner li:nth-child(2) {left: 37%; top: 50%;}
+.premium .banner li:nth-child(3) {left: 55%; top: 62%;}
+.premium .banner li:nth-child(4) {right: 2%; top: 8%; width: 32%;}
+
+/* animation */
+.premium .banner li:nth-child(1).motion {animation-name: slide-up; animation-duration: 1.2s;}
+.premium .banner li:nth-child(2).motion {animation-name: slide-up; animation-duration: 1.8s;}
+.premium .banner li:nth-child(3).motion {animation-name: slide-up; animation-duration: 2.2s;}
+.premium .banner li:nth-child(4).motion {animation-name: slide-up; animation-duration: 1.5s;}
+
+
+/* global */
+.global {width: 95%; margin: 40px auto; padding: 40px 0; text-align: center; position: relative;}
+.global:before {content: ''; width: 100%; height: 45%; background: #eee; position: absolute; left: 0; bottom: 0; z-index: -1;}
+.global .title h2 {font-size: 30px; margin-bottom: 20px;}
+.global .title p {font-size: 18px; margin-bottom: 50px; line-height: 1.4;}
+.global ul {padding-top: 50px; display: flex; justify-content: space-between;}
+.global ul li {width: 25%; padding: 15px; overflow: hidden;}
+.global ul li:nth-child(1),.global ul li:nth-child(3) {margin-top: -50px;}
+.global ul li a {display: block;}
+.global ul li a .img {box-shadow: 10px 10px 10px rgba(0,0,0,0.25); position: relative; transition: all 0.2s;}
+.global ul li a .img img {width: 100%;}
+.global ul li a .img:after {content: 'VIEW'; width: 100%; height: 100%; background: rgba(44,35,28,0.8); position: absolute; left: 0; top: 0; font-size: 22px; color: #d4d4d4; padding-top: 200px; box-sizing: border-box; opacity: 0; transition: all 0.2s;}
+
+/* hover */
+.global ul li a:hover .img, .global ul li a:focus .img {transform: translate(-8px, -8px); box-shadow: 15px 18px 10px rgba(0,0,0,0.35); transition: all 0.2s;}
+.global ul li a:hover .img:after, .global ul li a:focus .img:after {opacity: 1;}
+.global ul li a h3 {font-size: 22px; margin: 40px 0 15px;}
+.global ul li a h3 span {display: block; font-size: 18px; font-weight: normal; color: #888;}
+.global ul li a p {font-size: 17px;}
+
+/* animation */
+.global.motion ul li:nth-child(1) {animation-name: slide-up; animation-duration: 1s;}
+.global.motion ul li:nth-child(2) {animation-name: slide-up; animation-duration: 1.4s;}
+.global.motion ul li:nth-child(3) {animation-name: slide-up; animation-duration: 1.7s;}
+.global.motion ul li:nth-child(4) {animation-name: slide-up; animation-duration: 2s;}
+
+/* footer */
+footer {padding: 80px 0 0; text-align: center;}
+footer .sns li {display: inline-block; margin-right: 30px;}
+footer .footerLogo {margin: 40px 0 20px; font-size: 40px; letter-spacing: -6px; font-weight: 900; color: #39312b;}
+footer ul li {font-size: 17px; line-height: 1.4;}
+footer ul li .copyright {font-size: 15px; margin-top: 20px; font-weight: 100; color: #888; display: block;}
+footer .box {padding: 150px 0; background: url(../img/bottom_bg.jpg) no-repeat center/cover; margin-top: 80px;}
+footer .box h2 {color: #fff; font-size: 22px; font-weight: normal;}
+
+/* animation */
+footer .box h2.motion {animation-name: slide-up; animation-duration: 1.2s;}
